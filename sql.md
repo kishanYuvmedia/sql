@@ -186,21 +186,12 @@ RIGHT JOIN Orders
 ON Customers.CustomerID = Orders.CustomerID;
 ```
 
-## SQL FULL JOIN
-
-```sql
-SELECT Customers.Name, Orders.OrderID
-FROM Customers
-FULL OUTER JOIN Orders
-ON Customers.CustomerID = Orders.CustomerID;
-```
-
 ## SQL SELF JOIN
 
 ```sql
 SELECT A.Name, B.Name
 FROM Employees A
-JOIN Employees B
+INNER JOIN Employees B
 ON A.ManagerID = B.EmployeeID;
 ```
 
